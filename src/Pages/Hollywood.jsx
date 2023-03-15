@@ -2,7 +2,7 @@ import React from 'react'
 import Page from '../Components/Page'
 import SideBar from '../Components/SideBar';
 import { useContext } from 'react';
-import { store } from '../Components/Details';
+import { store } from '../Components/Detail';
 import Advertisement from '../Components/Advertisement';
 
 const Hollywood = () => {

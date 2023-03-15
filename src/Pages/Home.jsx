@@ -3,7 +3,7 @@ import HomeVTiles from '../Components/HomeVTiles'
 import Grassland from '../media/image2.jpeg'
 // import Hill from './Hill.jpg';
 import Hill from '../media/images.jpeg'
-import { store } from '../Components/Details'
+import { store } from '../Components/Detail'
 import { Link } from 'react-router-dom'
 // import { NavLink } from 'react-router-dom'
 
