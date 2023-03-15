@@ -1,0 +1,452 @@
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+    margin: 0
+}
+
+code {
+    font-family: source-code-pro,Menlo,Monaco,Consolas,Courier New,monospace
+}
+
+* {
+    font-family: sans-serif
+}
+
+a {
+    color: #000;
+    text-decoration: none
+}
+
+a:hover {
+    font-size: 20px;
+    transition: .2s ease-in-out
+}
+
+#verticalText {
+    background-color: aqua;
+    margin-left: 45%;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    -webkit-writing-mode: vertical-lr;
+    writing-mode: vertical-lr
+}
+
+#headText {
+    font-size: 30px
+}
+
+#siren {
+    font-weight: 700
+}
+
+#NavBar {
+    display: flex;
+    font-weight: 500;
+    justify-content: space-around
+}
+
+.hr {
+    background-color: grey;
+    height: 3px;
+    opacity: .2
+}
+
+#grid {
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    -webkit-column-gap: 5px;
+    column-gap: 5px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    height: 300px;
+    margin: auto;
+    row-gap: 5px;
+    width: 1200px
+}
+
+.b1 {
+    grid-row: 1/3
+}
+
+.b1,.gridImage {
+    border-radius: 10px
+}
+
+.gridImage {
+    height: 310px;
+    width: 897px
+}
+
+.b2 {
+    grid-column: 2/3
+}
+
+.b2,.gridImage2 {
+    border-radius: 10px
+}
+
+.gridImage2 {
+    height: 150px;
+    width: 298px
+}
+
+.verticalTiles {
+    background-color: #e9e4e4;
+    border-radius: 10px;
+    -webkit-column-gap: 10px;
+    column-gap: 10px;
+    font-family: system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;
+    height: 400px;
+    margin-left: 5px;
+    overflow: hidden;
+    width: 90%
+}
+
+.tile1 {
+    border-radius: 10px;
+    color: #000;
+    height: 100%;
+    text-align: center;
+    width: 27%
+}
+
+.tile1:hover {
+    box-shadow: 2px 2px 5px #ffb6c1
+}
+
+.tile2,.tile3 {
+    background-color: red;
+    border-radius: 10px;
+    height: 100%;
+    width: 27%
+}
+
+.tileImg {
+    border-radius: 10px;
+    height: 230px;
+    width: 100%
+}
+
+#hr2 {
+    background-color: red;
+    border: none;
+    border-radius: 10px;
+    height: 2px;
+    margin-left: 0;
+    opacity: .9;
+    width: 25px
+}
+
+#latext {
+    font-size: 30px;
+    margin-left: 40px
+}
+
+.pageContainer {
+    background-color: #fafafa;
+    flex-direction: column;
+    height: 250px;
+    margin-left: 30px;
+    overflow: hidden;
+    row-gap: 10px;
+    width: 50%
+}
+
+.pageContainer,.pc1 {
+    border-radius: 10px;
+    display: flex
+}
+
+.pc1 {
+    border: 2px solid grey;
+    color: #000;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    justify-content: space-around;
+    margin-top: 10px;
+    text-align: center;
+    width: 95%
+}
+
+.pc1:hover {
+    box-shadow: 5px 5px 10px #f08080
+}
+
+.pcImage {
+    border-radius: 10px;
+    display: inline-block;
+    height: 100%;
+    width: 50%
+}
+
+.pcHR {
+    margin-left: 30px;
+    width: 50%
+}
+
+.pcRightContainer {
+    background-color: #fafafa;
+    flex-direction: column;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    left: 56%;
+    overflow: hidden;
+    position: relative;
+    row-gap: 10px;
+    text-align: center;
+    top: -2500px;
+    width: 40%
+}
+
+.pcRC1,.pcRightContainer {
+    border-radius: 10px;
+    display: flex
+}
+
+.pcRC1 {
+    height: 150px;
+    justify-content: space-around;
+    margin-top: 10px;
+    width: 100%
+}
+
+.pcRC1:hover {
+    box-shadow: 3px 3px 7px #ffa07a
+}
+
+.adv {
+    border: 2px solid #000;
+    height: 350px;
+    left: 70%;
+    position: absolute;
+    text-align: center;
+    top: 410%;
+    width: 24%
+}
+
+.heading {
+    border: none;
+    -webkit-text-decoration: underline double;
+    text-decoration: underline double;
+    top: 45%
+}
+
+.pRCimg {
+    border-radius: 10px;
+    height: 100%;
+    width: 50%
+}
+
+.hometiles {
+    border-radius: 10px;
+    color: blue;
+    display: flex;
+    flex-direction: row;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 100vw
+}
+
+.hometiles:hover {
+    box-shadow: 5px -5px 3px grey;
+    transition: .2s ease-in-out
+}
+
+.blogPage {
+    background-color: wheat;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: auto;
+    text-align: center;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content
+}
+
+.backbtn {
+    background-color: #fff;
+    border-radius: 5px;
+    color: #000;
+    font-size: 20px;
+    height: 29px;
+    width: 101px
+}
+
+.backbtn:hover {
+    background-color: green;
+    color: #fff;
+    font-size: 25px;
+    transition: .2s ease-in-out
+}
+
+@media (min-width: 320px) and (max-width:480px) {
+    #NavBar {
+        align-items:center;
+        display: flex;
+        flex-direction: column;
+        font-weight: 500;
+        justify-content: center
+    }
+
+    #grid {
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+        -webkit-column-gap: 5px;
+        column-gap: 5px;
+        display: grid;
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: 3fr 1fr;
+        height: 300px;
+        margin: auto;
+        margin-left: auto;
+        row-gap: 5px;
+        width: 1200px
+    }
+
+    .gridImage,.gridImage2 {
+        border-radius: 10px;
+        height: 50vh;
+        margin-left: 10px;
+        width: 100vw
+    }
+
+    #latext {
+        background-color: #000;
+        color: #fff;
+        font-size: 30px;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
+        margin-left: 25%;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content
+    }
+
+    #hr2 {
+        color: red;
+        height: 5px
+    }
+
+    .homeDiv {
+        position: relative;
+        top: 400px
+    }
+
+    .hometiles {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px
+    }
+
+    .verticalTiles {
+        background-color: #e9e4e4;
+        border-radius: 10px;
+        -webkit-column-gap: 10px;
+        column-gap: 10px;
+        display: flex;
+        flex-direction: row;
+        font-family: system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;
+        height: 400px;
+        justify-content: space-evenly;
+        margin-left: auto;
+        overflow: hidden;
+        width: 90vw
+    }
+
+    .sectionlink {
+        margin-left: 25%
+    }
+
+    .sectionlink:hover {
+        color: red;
+        -webkit-transform: scale3d(20px);
+        transform: scale3d(20px);
+        transition: .2s ease-in-out
+    }
+
+    .adv {
+        height: 185px;
+        left: 10px;
+        position: absolute;
+        top: 610%;
+        width: 100vw
+    }
+
+    .pc1 {
+        border: 2px solid grey;
+        box-shadow: 2px 2px 3px pink;
+        color: #000;
+        height: 200px;
+        justify-content: space-around;
+        width: 100vw
+    }
+
+    .pc1,.pcRightContainer {
+        border-radius: 10px;
+        display: flex;
+        margin-top: 10px;
+        overflow: hidden;
+        text-align: center
+    }
+
+    .pcRightContainer {
+        background-color: #d5cece;
+        flex-direction: column;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
+        left: 10%;
+        position: relative;
+        row-gap: 10px;
+        top: 200px;
+        width: 90%
+    }
+
+    .pcRC1 {
+        align-items: center;
+        border-radius: 10px;
+        display: flex;
+        height: 150px;
+        justify-content: space-around;
+        overflow: hidden;
+        row-gap: 10px;
+        width: 100%
+    }
+
+    .blogPage {
+        background-color: wheat;
+        font-family: system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
+        margin: auto;
+        text-align: center;
+        width: 100vw
+    }
+
+    .blogPage img {
+        height: 50vh;
+        width: 100%
+    }
+
+    .pageContainer {
+        background-color: #fafafa;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        height: 250px;
+        margin-left: 30px;
+        overflow: hidden;
+        row-gap: 10px;
+        width: 100vw
+    }
+}
+
+/*# sourceMappingURL=main.fff652a0.css.map*/
